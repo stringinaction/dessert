@@ -31,6 +31,7 @@ public class DessertTest {
         GenericXmlApplicationContext ctx = new GenericXmlApplicationContext();
         //ctx.getEnvironment().addActiveProfile("dev");
         String[] ap = ctx.getEnvironment().getActiveProfiles();
+        System.out.println("###################");
         for(String s : ap){
             System.out.println(s);
         }
