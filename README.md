@@ -13,6 +13,11 @@
   @Profile("dev")
 </pre>
 
+###条件化的Bean
+<pre>
+  @Conditional(Conditional's child object .class)
+</pre>
+
 ###问题点：
 <pre>
 不知道为什么@ActiveProfiles("dev")无法生效，只有在编译选项中加上  -Dspring.profiles.active="pro"　才有用
@@ -21,6 +26,5 @@
 
 ###TODO:
 <pre>
-条件化Bean Conditional
 自动装配的歧义性处理
 </pre>
