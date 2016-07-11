@@ -13,6 +13,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.context.support.GenericXmlApplicationContext;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 /**
@@ -20,9 +21,9 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
  * @author zhangjingwei
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@ActiveProfiles("dev")
 @ContextConfiguration(classes=DessertConfig.class)
-public class DessertTest {
+@ActiveProfiles("dev")
+public class DessertTest extends AbstractJUnit4SpringContextTests {
     
     @Test
     public void testProfile(){
