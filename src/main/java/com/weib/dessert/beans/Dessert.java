@@ -9,6 +9,6 @@ package com.weib.dessert.beans;
  *
  * @author zhangjingwei
  */
-public interface DessertBean {
+public interface Dessert {
     void output();
 }

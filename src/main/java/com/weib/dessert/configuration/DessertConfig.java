@@ -15,6 +15,6 @@ import org.springframework.context.annotation.Import;
  */
 @Configuration
 @Import(ProfileBeansConfig.class)
-@ComponentScan(basePackages={"com.weib.dessert.beans"})
+@ComponentScan(basePackages={"com.weib.dessert.beans", "com.weib.dessert.beans.menu"})
 public class DessertConfig {
 }

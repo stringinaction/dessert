@@ -9,6 +9,9 @@ import com.weib.dessert.configuration.DessertConfig;
 import com.weib.dessert.profilebeans.ProfileBean;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.GenericXmlApplicationContext;
+import com.weib.dessert.beans.Dessert;
+import com.weib.dessert.beans.menu.LunchMenu;
+import com.weib.dessert.beans.menu.Menu;
 
 /**
  *
@@ -19,11 +22,24 @@ public class DessertMain {
     public static void main(String[] args){
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(DessertConfig.class);
         GenericXmlApplicationContext ctx = new GenericXmlApplicationContext();
+        
         String[] ap = ctx.getEnvironment().getActiveProfiles();
         for(String s : ap){
             System.out.println(s);
         }
         ProfileBean profileBean = (ProfileBean) context.getBean(ProfileBean.class);
         profileBean.output();
+        
+        Dessert dessert = context.getBean(Dessert.class);
+        dessert.output();
+        
+        Menu menu = context.getBean(Menu.class);
+        menu.desert();
+        
+        LunchMenu lunchmenu = context.getBean(LunchMenu.class);
+        lunchmenu.desert();
+        
+        ctx.close();
+        context.close();
     }
 }
