@@ -6,7 +6,7 @@
 package com.weib.dessert;
 
 import com.weib.dessert.configuration.DessertConfig;
-import com.weib.dessert.profilebeans.ProfileBean;
+import com.weib.dessert.beans.profile.ProfileBean;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;

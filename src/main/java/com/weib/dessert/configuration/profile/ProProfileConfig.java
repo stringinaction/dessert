@@ -3,10 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.weib.dessert.configuration;
+package com.weib.dessert.configuration.profile;
 
-import com.weib.dessert.profilebeans.ProProfileBean;
-import com.weib.dessert.profilebeans.ProfileBean;
+import com.weib.dessert.beans.profile.ProProfileBean;
+import com.weib.dessert.beans.profile.ProfileBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;

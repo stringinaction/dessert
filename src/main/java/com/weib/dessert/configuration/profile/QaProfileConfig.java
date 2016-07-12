@@ -3,11 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.weib.dessert.configuration;
+package com.weib.dessert.configuration.profile;
 
-import com.weib.dessert.profilebeans.DevProfileBean;
-import com.weib.dessert.profilebeans.ProfileBean;
+import com.weib.dessert.beans.profile.ProfileBean;
+import com.weib.dessert.beans.profile.QaProfileBean;
+import com.weib.dessert.beans.profile.condition.QaConditional;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Conditional;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 
@@ -16,10 +18,12 @@ import org.springframework.context.annotation.Profile;
  * @author zhangjingwei
  */
 @Configuration
-@Profile("dev")
-public class DevProfileConfig {
+@Profile("qa")
+@Conditional(QaConditional.class)
+public class QaProfileConfig {
+    
     @Bean
     public ProfileBean profileBean(){
-        return new DevProfileBean();
+        return new QaProfileBean();
     }
 }
