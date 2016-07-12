@@ -5,13 +5,13 @@
  */
 package com.weib.dessert.beans.profile;
 
-import org.springframework.stereotype.Component;
+//import org.springframework.stereotype.Component;
 
 /**
  *
  * @author zhangjingwei
  */
-@Component
+//@Component
 public class QaProfileBean implements ProfileBean{
 
     @Override
