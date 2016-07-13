@@ -5,7 +5,7 @@
  */
 package com.weib.dessert.beans.menu;
 
-import com.weib.dessert.beans.Dessert;
+import com.weib.dessert.beans.dessert.Dessert;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Primary;

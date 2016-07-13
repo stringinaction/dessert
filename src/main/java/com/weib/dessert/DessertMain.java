@@ -9,7 +9,7 @@ import com.weib.dessert.configuration.DessertConfig;
 import com.weib.dessert.beans.profile.ProfileBean;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.GenericXmlApplicationContext;
-import com.weib.dessert.beans.Dessert;
+import com.weib.dessert.beans.dessert.Dessert;
 import com.weib.dessert.beans.menu.LunchMenu;
 import com.weib.dessert.beans.menu.Menu;
 
