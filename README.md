@@ -29,3 +29,35 @@
   @Primary  优先装配的Bean
   @Qualifier("自定义限定符")  只有在自动装配时有效
 </pre>
+
+##总结
+###1 自动装配
+<pre>
+@Component  @Named
+@ComponentScan
+@Autowired  @Inject
+@Primary
+@Qualifier
+</pre>
+
+###2 JAVAConfig装配
+<pre>
+@Configuration
+@Import
+@Bean
+@Profile
+@ActiveProfiles
+@Conditional
+</pre>
+
+###3 --XML装配--（非重点）
+
+###4 作用域
+####1 单例（Singleton），在Spring上下文时装配
+####2 原型（Prototype），每次注入或能过Spring上下文时都创建一个Bean实例
+####3 会话（Session）和请求（Request），在每个会话或请求时，运行过程中创建Bean实例
+
+<pre>
+@Scope()
+</pre>
+
