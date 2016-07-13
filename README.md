@@ -61,3 +61,11 @@
 @Scope()
 </pre>
 
+###5 运行时值注入
+
+<pre>
+@PropertySource("classpath:app.properties") //要放到resources目录下
+@Value("${disc.title}") String title
+@Value("#{'test'}") String artist
+</pre>
+
