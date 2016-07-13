@@ -5,6 +5,7 @@
  */
 package com.weib.dessert;
 
+import com.weib.dessert.beans.cd.CD;
 import com.weib.dessert.configuration.DessertConfig;
 import com.weib.dessert.beans.profile.ProfileBean;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -38,6 +39,9 @@ public class DessertMain {
         
         LunchMenu lunchmenu = context.getBean(LunchMenu.class);
         lunchmenu.desert();
+        
+        CD cd = context.getBean(CD.class);
+        cd.play();
         
         ctx.close();
         context.close();
