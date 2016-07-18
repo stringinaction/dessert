@@ -10,7 +10,7 @@
                 <goal>org.codehaus.mojo:exec-maven-plugin:1.2.1:exec</goal>
             </goals>
             <properties>
-                <exec.args>-Dspring.profiles.active="qa" -Dspring.allow.qa=true -classpath %classpath ${packageClassName}</exec.args>
+                <exec.args>-Dspring.profiles.active="qa" -Dspring.allow.qa=true -classpath %classpath com.weib.dessert.DessertMain</exec.args>
                 <exec.executable>java</exec.executable>
             </properties>
         </action>
