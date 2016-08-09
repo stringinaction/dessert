@@ -19,7 +19,7 @@ import org.springframework.context.annotation.Profile;
  */
 @Configuration
 @Profile("qa")
-@Conditional(QaConditional.class)
+@Conditional(QaConditional.class) //条件成立时载入该config
 public class QaProfileConfig {
     
     @Bean
